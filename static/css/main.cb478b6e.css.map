@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.cb478b6e.css","mappings":"AAAA,KAGE,0DAA4D,CAD5D,QAAW,CADX,SAGF","sources":["style.css"],"sourcesContent":["body {\n  padding: 0px;\n  margin: 0px;\n  background-image: url(https://picsum.photos/1920/1080/?blur);\n}\n"],"names":[],"sourceRoot":""}
