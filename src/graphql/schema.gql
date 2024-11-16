@@ -1,0 +1,57 @@
+enum Category {
+  food
+  community
+  music
+  sports
+  arts
+  cultural
+  comedy
+  cinema
+  music
+  nature
+}
+
+enum DopamineType {
+  quick_boost
+  deep_engagement
+  moderate_activities
+}
+
+enum TimeFrame {
+  week
+  weekend
+  next_weekend
+}
+
+input Params {
+  categories: [Category!]
+  area: String
+  timeframe: TimeFrame
+  radius: Int
+  limit: Int
+}
+
+type Event {
+  title: String
+  description: String
+  distance: String
+  datetime: String
+  cost: String
+  duration: String
+  location: String
+  rating: Float
+  link: String
+  category: Category!
+}
+
+type Activity {
+  title: String
+  description: String
+  type: DopamineType
+  category: Category!
+}
+
+type Query {
+  events(params: Params!): [Event!]
+  activities(params: Params!): [Activity!]
+}

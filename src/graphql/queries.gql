@@ -1,0 +1,23 @@
+query Activities($params: Params!) {
+  activities(params: $params) @client {
+    title
+    description
+    type
+    category
+  }
+}
+
+query Events($params: Params!) {
+  events(params: $params) @client {
+    title
+    description
+    distance
+    datetime
+    cost
+    duration
+    location
+    rating
+    link
+    category
+  }
+}
